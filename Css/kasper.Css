@@ -137,8 +137,6 @@ nav ul li a{
     .toggle-menu {
         display: none;
     }
-   
-
 }
 @media(max-width:768px){
     nav ul{
@@ -969,24 +967,33 @@ i.fa-solid.fa-desktop {
     display: flex;
     flex-wrap: wrap;
     padding: 100px 0;
+    justify-content: center;
 }
 .subscribe .overlay .container .box{
     flex-basis: 50%;
 }
 .subscribe .overlay .container .box-one{
     border: 1px white solid;
-    width: fit-content;
+    width: 500px;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    margin: 0 20px;
 }
 i.far.fa-envelope.fa-lg {
     color: white;
     padding-left: 15px;
+    position: absolute;
+    top: 48%;
+    left: -5px;
 }
 .subscribe input[type="email"] {
     background: none;
     border: none;
-    padding: 10px;
+    padding: 20px 37px;
     color: white;
     caret-color: var(--main-color);
+    width: calc(100% - 130px);
 }
 .subscribe input[type="email"]:focus{
     outline: none;
@@ -1000,6 +1007,7 @@ input[type="submit"] {
     background-color: var(--main-color);
     border: 1px var(--main-color) solid;
     color: white;
+    width: 130px;
 }
 .subscribe .overlay .container .box-two{
     flex-basis: 50%;
